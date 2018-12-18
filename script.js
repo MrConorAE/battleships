@@ -1,4 +1,4 @@
-var rawGuess
+var rawGuess;
 
 function parseGuess(guess) {
 	var alphabet = ["A", "B", "C", "D", "E", "F", "G"];
@@ -6,6 +6,7 @@ function parseGuess(guess) {
 		view.displayMessage("⚠ OOPS! THAT'S NOT A VALID COORDINATE.", "error");
 	} else {
 		var firstChar = guess.charAt(0);
+		firstChar = firstChar.toUpperCase();
 		var row = alphabet.indexOf(firstChar);
 		var column = guess.charAt(1);
 		if (isNaN(row) || isNaN(column) || column === " " || row === " ") {
