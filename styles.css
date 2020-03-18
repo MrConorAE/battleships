@@ -74,6 +74,10 @@ input {
 	transition-duration: 0.2s;
 }
 
+input:disabled {
+	opacity: 0%;
+}
+
 #fireButton:hover {
 	color: #005265;
 	background-color: white;
