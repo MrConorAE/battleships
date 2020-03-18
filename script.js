@@ -136,7 +136,7 @@ var controller = {
 			this.guesses++;
 			var hit = model.fire(location);
 			if (hit && model.shipsSunk === model.numShips) {
-				view.displayMessage("🏆 YOU SUNK ALL THE SHIPS IN " + this.guesses + " SHOTS, WITH " + 9/this.guesses + "% ACCURACY!" , "success");
+				view.displayMessage("🏆 YOU SUNK ALL THE SHIPS IN " + this.guesses + " SHOTS, WITH " + (9/this.guesses)*100 + "% ACCURACY!" , "success");
 				document.getElementById("guessInput").disabled = true;
 				document.getElementById("fireButton").disabled = true;
 			}
