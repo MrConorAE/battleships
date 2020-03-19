@@ -90,7 +90,7 @@ input:disabled {
 
 .hit {
 	color: white;
-	background-image: radial-gradient(#e50000, rgba(217, 0, 0, 0))
+	background-color: #ef2513;
 }
 
 .miss {
